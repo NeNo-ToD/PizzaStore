@@ -299,6 +299,9 @@ footer {
   line-height: 60px; /* 250% */
   text-decoration: none;
 }
+#missingCredential {
+  display: none;
+}
 .col_text {
   color: #3f3f3f;
   font-size: 32px;
