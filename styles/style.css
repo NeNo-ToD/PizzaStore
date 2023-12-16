@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  /* border: 2px solid red; */
+}
+.logo {
+  height: 80px;
+  width: 80px;
+}
+.icon {
+  cursor: pointer;
+}
+header {
+  background-color: black;
+  padding: 20px 0;
+}
+.wraper {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.menu_link {
+  color: white;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.menu_nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.hero {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.banner {
+  padding-top: 26px;
+  padding-right: 200px;
+  color: #fff;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 128px;
+  font-weight: 900;
+}
+.hero_btn {
+  border-radius: 60px;
+  background: #26bb19;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-right: 200px;
+  margin-bottom: 140px;
+  border: none;
+  padding: 30px 80px;
+  transition: all ease-in-out 0.3s;
+}
+.product_section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.order_title {
+  color: #05041f;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  max-width: 700px;
+  margin: 80px auto;
+}
+.quote_title {
+  color: #020210;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 145.833% */
+  margin-bottom: 30px;
+  text-align: center;
+}
+.quote_text {
+  color: #333;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+  max-width: 287px;
+}
+.quotes {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  max-width: 1440px;
+}
+.products {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.product > img {
+  width: 450px;
+}
+.product_title {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 15px 0;
+  padding: 0 20px;
+}
+.product_describe {
+  color: #868686;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+.product_btn {
+  border-radius: 35px;
+  background: #25ad0f;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  border: none;
+  padding: 10px 40px;
+  align-self: center;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.feedbacks {
+  margin: 0 auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+  max-width: 1980px;
+}
+.feedback_banner {
+  width: 857px;
+  height: 1067px;
+}
+.feedback_title {
+  color: #010f1c;
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  width: 700px;
+  line-height: 60px; /* 93.75% */
+  text-align: center;
+}
+.feedback {
+  margin-top: 35px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+  max-width: 655px;
+}
+.form_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_title {
+  color: #010f1c;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 93.75% */
+  max-width: 655px;
+  margin: 0 auto;
+}
+form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+input {
+  width: 770px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  border: 3px solid #25ad0f;
+  color: #010f1c;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px; /* 200% */
+}
+input::placeholder {
+  color: #010f1c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 200% */
+}
+.join_btn {
+  width: 770px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px; /* 200% */
+  background-color: #25ad0f;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.map_sec {
+  max-width: 1440px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  padding: 35px;
+  margin-top: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px -13px 29px 0px rgba(0, 0, 0, 0.1),
+    0px -53px 53px 0px rgba(0, 0, 0, 0.09),
+    0px -119px 71px 0px rgba(0, 0, 0, 0.05),
+    0px -211px 84px 0px rgba(0, 0, 0, 0.01),
+    0px -330px 92px 0px rgba(0, 0, 0, 0);
+}
+.footer_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer_col_title {
+  color: #010f1c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 150% */
+}
+.logo_footer {
+  height: 139px;
+
+  margin-top: -30px;
+}
+.col {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.col_link {
+  color: #010f1c;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 250% */
+  text-decoration: none;
+}
+.col_text {
+  color: #3f3f3f;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 60px; */
+  font-family: "Poppins", sans-serif;
+  max-width: 330px;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+#myMap {
+  margin: 50px 0px 5px 0;
+  position: relative;
+  width: 470px;
+  height: 370px;
+}
+.subtitle {
+  color: #010f1c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 187.5% */
+}

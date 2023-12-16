@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AncuPS-8v30SBEMstZgMuItYnMervmzZUS9-BOqLoY_4SZI2j3Fwd3jTfKOR-UuT]"
+      async
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AncuPS-8v30SBEMstZgMuItYnMervmzZUS9-BOqLoY_4SZI2j3Fwd3jTfKOR-UuT]"
+      async
+      defer
+    ></script>
+  </head>
+  <body onload="GetMap">
+    <header>
+      <div class="wraper">
+        <img src="./img/logo.svg" alt="Logo" class="logo" />
+        <nav class="menu_nav">
+          <a class="menu_link" href="">Catalog</a>
+          <a class="menu_link" href="">Contact</a>
+          <a class="menu_link" href="">Menu</a>
+          <a class="menu_link" href="">About</a>
+          <a class="menu_link" href="">Find us</a>
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 36 36"
+            fill="none"
+          >
+            <path
+              d="M2 14.5H3.72222M3.72222 14.5L5.44444 32H29.5556L31.2778 14.5M3.72222 14.5H10.6111M33 14.5H31.2778M31.2778 14.5H24.3889M24.3889 14.5H10.6111M24.3889 14.5V11C24.3889 8.66725 23.0111 4 17.5 4C11.9889 4 10.6111 8.66725 10.6111 11V14.5M17.5 21.5V25M22.6667 21.5V25M12.3333 21.5V25"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 16C0 7.16364 7.16364 0 16 0C24.8364 0 32 7.16364 32 16C32 24.8364 24.8364 32 16 32C7.16364 32 0 24.8364 0 16ZM5.68436 24.0611C3.94618 21.8385 2.90909 19.04 2.90909 16C2.90935 13.9214 3.40458 11.8728 4.35379 10.0236C5.303 8.17436 6.67891 6.57777 8.36766 5.3659C10.0564 4.15402 12.0095 3.36171 14.0653 3.05451C16.121 2.7473 18.2204 2.93405 20.1896 3.59929C22.1589 4.26452 23.9415 5.38913 25.3898 6.88005C26.8381 8.37098 27.9106 10.1854 28.5185 12.1731C29.1264 14.1608 29.2523 16.2647 28.8857 18.3107C28.519 20.3567 27.6705 22.286 26.4102 23.9389C25.1869 22.3708 23.6217 21.1026 21.8341 20.231C20.0464 19.3593 18.0834 18.9072 16.0945 18.9091C14.0796 18.9073 12.0916 19.3715 10.2857 20.2652C8.47985 21.1589 6.90506 22.458 5.68436 24.0611ZM7.74982 26.1644C10.0804 28.0616 12.9948 29.0954 16 29.0909C19.0583 29.0952 22.0208 28.0243 24.3695 26.0655C23.4274 24.7503 22.1853 23.6789 20.7461 22.9403C19.3069 22.2016 17.7122 21.8169 16.0945 21.8182C14.4564 21.817 12.8423 22.2116 11.3894 22.9683C9.93649 23.725 8.6879 24.8214 7.74982 26.1644ZM20.2426 16.2426C21.3679 15.1174 22 13.5913 22 12C22 10.4087 21.3679 8.88258 20.2426 7.75736C19.1174 6.63214 17.5913 6 16 6C14.4087 6 12.8826 6.63214 11.7574 7.75736C10.6321 8.88258 10 10.4087 10 12C10 13.5913 10.6321 15.1174 11.7574 16.2426C12.8826 17.3679 14.4087 18 16 18C17.5913 18 19.1174 17.3679 20.2426 16.2426ZM18.1213 14.1213C18.6839 13.5587 19 12.7956 19 12C19 11.2044 18.6839 10.4413 18.1213 9.87868C17.5587 9.31607 16.7957 9 16 9C15.2044 9 14.4413 9.31607 13.8787 9.87868C13.3161 10.4413 13 11.2044 13 12C13 12.7956 13.3161 13.5587 13.8787 14.1213C14.4413 14.6839 15.2044 15 16 15C16.7957 15 17.5587 14.6839 18.1213 14.1213Z"
+              fill="white"
+            />
+          </svg>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <h1 class="banner">Made with love</h1>
+      <button class="hero_btn">Buy now</button>
+    </section>
+    <section class="product_section">
+      <h2 class="order_title">Delicious pizza in a short time</h2>
+      <div class="quotes">
+        <div class="quote">
+          <p class="quote_title">Easy To Order</p>
+          <p class="quote_text">
+            The most easy way to have an order from Italy
+          </p>
+        </div>
+        <div class="quote">
+          <p class="quote_title">Delivery</p>
+          <p class="quote_text">Fast and high quality delivery</p>
+        </div>
+        <div class="quote">
+          <p class="quote_title">Tasty pizza</p>
+          <p class="quote_text">Delicious pizza of different flavors</p>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <img src="./img/img1.png" alt="" />
+          <p class="product_title">Pan-pizza</p>
+          <p class="product_describe">400g</p>
+          <p class="product_describe">
+            Mozzarella cheese, lard, pickled onions and hot peppers
+          </p>
+          <button class="product_btn">+Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./img/img2.png" alt="" />
+          <p class="product_title">Pan-pizza</p>
+          <p class="product_describe">400g</p>
+          <p class="product_describe">
+            Mozzarella cheese, lard, pickled onions and hot peppers
+          </p>
+          <button class="product_btn">+Add to cart</button>
+        </div>
+        <div class="product">
+          <img src="./img/img3.png" alt="" />
+          <p class="product_title">Pan-pizza</p>
+          <p class="product_describe">400g</p>
+          <p class="product_describe">
+            Mozzarella cheese, lard, pickled onions and hot peppers
+          </p>
+          <button class="product_btn">+Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="feedbacks">
+      <img src="./img/baner.png" alt="Baner" class="feedback_banner" />
+      <div>
+        <h2 class="feedback_title">We have many well-done customers</h2>
+        <p class="feedback">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          magni totam adipisci, officia dignissimos placeat possimus expedita
+        </p>
+        <p class="feedback">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          magni totam adipisci, officia dignissimos placeat possimus expedita
+        </p>
+        <p class="feedback">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          magni totam adipisci, officia dignissimos placeat possimus expedita
+        </p>
+      </div>
+    </section>
+    <section class="form_section">
+      <h2 class="form_title">Join and leave your feedback</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Mail" />
+        <input type="password" placeholder="Password" />
+        <input type="tel" placeholder="Phone" />
+        <button class="join_btn">Join</button>
+      </form>
+    </section>
+    <section class="map_sec">
+      <h2 class="feedback_title">Find us</h2>
+      <div id="myMap"></div>
+      <p class="subtitle">Biffco Enterprises Ltd.</p>
+    </section>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="col">
+          <img src="./img/logo.svg" alt="Logo" class="logo_footer" />
+          <p class="col_text">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id es
+          </p>
+        </div>
+        <div class="col">
+          <p class="footer_col_title">About</p>
+          <a href="" class="col_link">About</a>
+        </div>
+        <div class="col">
+          <p class="footer_col_title">Contact</p>
+          <a href="" class="col_link">Contact</a>
+        </div>
+        <div class="col">
+          <p class="footer_col_title">Catalog</p>
+          <a href="" class="col_link">Catalog</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/map.js"></script>
+  </body>
+</html>
